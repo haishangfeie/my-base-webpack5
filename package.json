@@ -1,0 +1,30 @@
+{
+	"name": "my-base-webpack5",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint --ext .js,.ts,.jsx,.tsx --fix ./examples",
+		"prepare": "husky install"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"lint-staged": {
+		"examples/**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.ts,.jsx,.tsx --fix"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.1",
+		"@commitlint/config-conventional": "^17.6.1",
+		"@typescript-eslint/eslint-plugin": "^5.58.0",
+		"@typescript-eslint/parser": "^5.58.0",
+		"commitlint": "^17.6.1",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.0",
+		"lint-staged": "^13.2.1",
+		"prettier": "^2.8.7",
+		"typescript": "^5.0.4"
+	}
+}
